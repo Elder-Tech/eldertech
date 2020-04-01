@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage img {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage-sign-in-btn {
+  position: absolute;
+  right: 0;
+  background-color: #b2d6ef;
+  border: 3px solid #b2d6ef;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  position: relative;
+  top: 20%;
+}
+
+.homepage-buttons button {
+  background-color: #ffdba9;
+  border-radius: 1.5rem;
+  border: 3px solid #ef8d22;
+  text-align: center;
+  width: 20vw;
+  height: 20vw;
+  min-width: 150px;
+  min-height: 150px;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: liberation-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  box-shadow: 5px 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homepage-buttons button:hover {
+  color: #ef8d22;
 }
