@@ -4,6 +4,50 @@
   background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
 }
 
+.App-header {
+  position: absolute;
+  width: 100vw;
+}
+
+.App-header img {
+  display: block;
+  margin: 15px auto 15px;
+}
+
+.App-header nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-header form {
+  background-color: #ffdba9;
+  border: solid 3px #ef8d22;
+  flex-grow: 1;
+  display: flex;
+}
+
+.App-header input {
+  flex-grow: 1;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border-color: #ffdba9;
+}
+
+.App-header a {
+  flex-grow: 3;
+  background-color: #ffdba9;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  border: 3px solid #ef8d22;
+  font-size: calc(10px + 1vmin);
+  font-family: liberation-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
 .homepage img {
   display: block;
   margin: auto;
@@ -18,7 +62,9 @@
   border: 3px solid #b2d6ef;
   margin-top: 10px;
   margin-right: 10px;
-  cursor: pointer;
+  box-shadow: 3px 3px;
+  text-decoration: none;
+  color: black;
 }
 
 .homepage-buttons {
@@ -30,7 +76,16 @@
   top: 20%;
 }
 
-.homepage-buttons button {
+.homepage-buttons button#fixme {
+  flex-direction: row;
+}
+
+.homepage-buttons a, button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
   background-color: #ffdba9;
   border-radius: 1.5rem;
   border: 3px solid #ef8d22;
@@ -47,6 +102,6 @@
   cursor: pointer;
 }
 
-.homepage-buttons button:hover {
+.homepage-buttons a:hover, button:hover {
   color: #ef8d22;
 }
