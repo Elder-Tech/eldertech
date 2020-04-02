@@ -8,6 +8,7 @@ import {
     Link
 } from "react-router-dom";
 import HeaderComponent from "./HeaderComponent";
+import LoginComponent from "./LoginComponent";
 
 const routes = [
     {
@@ -28,7 +29,7 @@ const routes = [
     {
         path: "/login",
         exact: true,
-        main: () => <div />
+        main: () => <LoginComponent />
     },
     {
         path: "/header",
