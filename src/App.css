@@ -23,11 +23,21 @@
   flex-direction: row;
 }
 
+.App-header nav a img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: 5px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
 .App-header nav button {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -30%;
+  top: -25%;
   height: 150%;
   width: 50%;
   min-width: 70px;
@@ -63,7 +73,6 @@
   background-color: #ffdba9;
   text-decoration: none;
   color: black;
-  padding: 15px;
   border: 3px solid #ef8d22;
   font-size: calc(10px + 1vmin);
   font-family: liberation-sans, sans-serif;
