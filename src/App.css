@@ -23,6 +23,26 @@
   flex-direction: row;
 }
 
+.App-header nav button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -30%;
+  height: 150%;
+  width: 50%;
+  min-width: 70px;
+  box-shadow: 3px 3px;
+  background-color: transparent;
+  border: solid #ef8d22;
+  border-radius: 30px;
+  font-size: calc(9px + 1vmin);
+}
+
+.App-header nav button:hover {
+  color: #ef8d22;
+  cursor: pointer;
+}
+
 .App-header form {
   background-color: #ffdba9;
   border: solid 3px #ef8d22;
@@ -39,6 +59,8 @@
 }
 
 .App-header a {
+  display: flex;
+  justify-content: center;
   flex-grow: 3;
   background-color: #ffdba9;
   text-decoration: none;
@@ -50,6 +72,7 @@
   font-weight: 500;
   font-style: normal;
   text-align: center;
+  cursor: default;
 }
 
 .homepage img {
@@ -88,7 +111,7 @@
   flex-direction: row;
 }
 
-.homepage-buttons a, button {
+.homepage-buttons a, .homepage-buttons button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +133,7 @@
   cursor: pointer;
 }
 
-.homepage-buttons a:hover, button:hover {
+.homepage-buttons a:hover, .homepage-buttons button:hover {
   color: #ef8d22;
 }
 
@@ -127,7 +150,7 @@
   align-items: center;
 }
 
-.login-page input[type="text"], input[type="password"] {
+.login-page input[type="text"], .login-page input[type="password"] {
   border: 1px solid black;
   padding: 10px;
   margin-top: 15px;

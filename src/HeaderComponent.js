@@ -10,9 +10,9 @@ export default class HeaderComponent extends React.Component {
         return <header className="App-header">
             <img src={logo} alt="logo" />
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/articles">Articles</Link>
-                <Link to="/questions">Questions</Link>
+                <Link to="/"><button>Home</button></Link>
+                <Link to="/articles"><button>Articles</button></Link>
+                <Link to="/questions"><button>Questions</button></Link>
                 <form id="search">
                     <input type="text" placeholder="Search"/>
                 </form>
