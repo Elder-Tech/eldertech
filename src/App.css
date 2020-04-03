@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .App {
   height: 100vh;
   width: 100vw;
@@ -67,6 +71,10 @@
   color: black;
 }
 
+.homepage-sign-in-btn:hover {
+  color: blue;
+}
+
 .homepage-buttons {
   display: flex;
   flex-direction: row;
@@ -104,4 +112,42 @@
 
 .homepage-buttons a:hover, button:hover {
   color: #ef8d22;
+}
+
+.login-page {
+  text-align: center;
+  position: relative;
+  top: 15rem;
+}
+
+.login-page form {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page input[type="text"], input[type="password"] {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 60vw;
+  max-width: 500px;
+}
+
+.login-page input[type="submit"] {
+  background-color: #ffdba9;
+  border: 3px solid #ef8d22;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 30vw;
+  max-width: 200px;
+  box-shadow: 5px 5px;
+}
+
+.login-page input[type="submit"]:hover {
+  color: #ef8d22;
+  cursor: pointer;
 }

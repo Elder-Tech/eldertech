@@ -8,6 +8,7 @@ import {
     Link
 } from "react-router-dom";
 import HeaderComponent from "./HeaderComponent";
+import LoginComponent from "./LoginComponent";
 
 const routes = [
     {
@@ -28,7 +29,7 @@ const routes = [
     {
         path: "/login",
         exact: true,
-        main: () => <div />
+        main: () => <LoginComponent />
     },
     {
         path: "/header",
@@ -55,9 +56,15 @@ function App() {
 }
 
 function Homepage() {
+    let sign_in_button_text = "Helper Log In";
+    let logged_in = localStorage.getItem("loggedIn");
+    if(logged_in) {
+        sign_in_button_text = "Logged In";
+    }
+
     return (
         <div className="App homepage">
-            <Link to="/login" className="homepage-sign-in-btn">Helper Log In</Link>
+            <Link to="/login" className="homepage-sign-in-btn">{sign_in_button_text}</Link>
             <img src={logo} alt="logo" />
             <div className="homepage-buttons">
                 <Link to="/questions">Questions</Link>
