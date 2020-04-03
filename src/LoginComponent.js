@@ -10,6 +10,14 @@ export default class LoginComponent extends React.Component {
         this.state = {redirect: null, values: {username: '', password: ''}};
     }
 
+    componentDidMount() {
+        let logged_in = localStorage.getItem("loggedIn");
+        if(logged_in) { // we are already logged in! The user must want to log out
+            localStorage.removeItem("loggedIn");
+            this.setState({redirect: '/'});
+        }
+    }
+
     handleChange(event) {
         let form_values = this.state.values;
         form_values[event.target.id] = event.target.value;
