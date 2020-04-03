@@ -31,10 +31,8 @@
   height: 150%;
   width: 50%;
   min-width: 70px;
-  box-shadow: 3px 3px;
   background-color: transparent;
-  border: solid #ef8d22;
-  border-radius: 30px;
+  border: none;
   font-size: calc(9px + 1vmin);
 }
 
