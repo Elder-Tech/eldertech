@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
+import ArticleListComponent from "./ArticleListComponent";
 
 const routes = [
     {
@@ -19,7 +20,7 @@ const routes = [
     {
         path: "/articles",
         exact: true,
-        main: () => <div />
+        main: () => <ArticleListComponent />
     },
     {
         path: "/questions",

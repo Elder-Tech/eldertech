@@ -183,3 +183,8 @@
   color: #ef8d22;
   cursor: pointer;
 }
+
+.article-list-page {
+  position: relative;
+  top: 20%;
+}
