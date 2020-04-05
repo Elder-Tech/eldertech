@@ -23,6 +23,16 @@ const routes = [
         main: () => <ArticleListComponent />
     },
     {
+        path: "/articles/new",
+        exact: true,
+        main: () => <div/>
+    },
+    {
+        path: "/articles/:id",
+        exact: true,
+        main: () => <div/>
+    },
+    {
         path: "/questions",
         exact: true,
         main: () => <div />

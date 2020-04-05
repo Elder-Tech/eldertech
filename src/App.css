@@ -185,6 +185,59 @@
 }
 
 .article-list-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  top: 20%;
+  top: 20vh;
+}
+
+.article-list-page a#add-article-btn {
+  background: #ffdba9;
+  border: 3px solid #ef8d22;
+  border-radius: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 5px 4px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article-list-page a#add-article-btn:hover {
+  color: #ef8d22;
+}
+
+.article-list-page h2 {
+  margin-bottom: 20px;
+}
+
+.article-btn {
+  text-decoration: none;
+}
+
+.article-btn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #ffdba9;
+  border: 3px solid #ef8d22;
+  padding: 10px;
+  font-size: calc(10px + 1vmin);
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 60vw;
+}
+
+.article-btn button:hover {
+  color: #ef8d22;
+}
+
+.article-btn div {
+  margin: auto;
+}
+
+.article-btn img {
+  width: 50px;
 }
