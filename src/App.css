@@ -268,3 +268,31 @@
 .question-list-container a#answer-btn:hover {
   color: #ef8d22;
 }
+
+.standard-button {
+  background: #ffdba9;
+  border: 3px solid #ef8d22;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.standard-input {
+  flex-grow: 1;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border-color: #ffdba9;
+}
+
+.submit-article-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 5%;
+}

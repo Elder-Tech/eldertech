@@ -11,6 +11,7 @@ import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
+import NewArticleComponent from "./NewArticleComponent";
 
 const routes = [
     {
@@ -26,7 +27,7 @@ const routes = [
     {
         path: "/articles/new",
         exact: true,
-        main: () => <div/>
+        main: () => <NewArticleComponent />
     },
     {
         path: "/articles/:id",
