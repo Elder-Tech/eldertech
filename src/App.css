@@ -8,14 +8,9 @@
   background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
 }
 
-.App-header {
-  position: absolute;
-  width: 100vw;
-}
-
 .App-header img {
   display: block;
-  margin: 15px auto 15px;
+  margin: auto;
   width: 250px;
 }
 
@@ -149,7 +144,7 @@
 .login-page {
   text-align: center;
   position: relative;
-  top: 15rem;
+  top: 15%;
 }
 
 .login-page form {
@@ -184,40 +179,40 @@
   cursor: pointer;
 }
 
-.article-list-page {
+.list-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 20vh;
+  top: 5%;
 }
 
-.article-list-page a#add-article-btn {
+.list-page a#add-article-btn {
   background: #ffdba9;
   border: 3px solid #ef8d22;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px;
   text-decoration: none;
   color: black;
-  box-shadow: 5px 4px;
+  box-shadow: 2px 2px;
   width: 200px;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.article-list-page a#add-article-btn:hover {
+.list-page a#add-article-btn:hover {
   color: #ef8d22;
 }
 
-.article-list-page h2 {
+.list-page h2 {
   margin-bottom: 20px;
 }
 
-.article-btn {
+.list-btn {
   text-decoration: none;
 }
 
-.article-btn button {
+.list-btn button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -228,16 +223,48 @@
   cursor: pointer;
   margin-bottom: 20px;
   width: 60vw;
+  box-shadow: 2px 2px;
+  border-radius: 10px;
 }
 
-.article-btn button:hover {
+.list-btn button:hover {
   color: #ef8d22;
 }
 
-.article-btn div {
+.list-btn div {
   margin: auto;
 }
 
-.article-btn img {
+.list-btn img {
   width: 50px;
+}
+
+.question-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.question-list-container button {
+  margin: 0;
+}
+
+.question-list-container a#answer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: #ffdba9;
+  border: 3px solid #ef8d22;
+  width: 100px;
+  box-shadow: 2px 2px;
+  border-radius: 10px;
+}
+
+.question-list-container a#answer-btn:hover {
+  color: #ef8d22;
 }

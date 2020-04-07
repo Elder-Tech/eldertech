@@ -31,7 +31,7 @@ export default class ArticleListComponent extends React.Component {
 
         return <div className="App">
             <HeaderComponent/>
-            <div className="article-list-page">
+            <div className="list-page">
                 {logged_in_jsx}
                 <h2>Articles</h2>
                 {article_list_jsx}
@@ -44,7 +44,7 @@ function ArticleButton({index, article}) {
     let content = article.content.substring(0, 30) + " ...";
 
     return (
-        <Link className="article-btn" to={"/articles/" + index}>
+        <Link className="list-btn" to={"/articles/" + index}>
             <button key={index}>
                 <img alt="newspaper article" src={article_image} />
                 <div>

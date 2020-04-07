@@ -10,6 +10,7 @@ import {
 import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
 import ArticleListComponent from "./ArticleListComponent";
+import QuestionListComponent from "./QuestionListComponent";
 
 const routes = [
     {
@@ -35,8 +36,24 @@ const routes = [
     {
         path: "/questions",
         exact: true,
-        main: () => <div />
+        main: () => <QuestionListComponent />
     },
+    {
+        path: "/questions/new",
+        exact: true,
+        main: () => <div/>
+    },
+    {
+        path: "/questions/:id",
+        exact: true,
+        main: () => <div/>
+    },
+    {
+        path: "/questions/:id/answer",
+        exact: true,
+        main: () => <div/>
+    },
+
     {
         path: "/login",
         exact: true,

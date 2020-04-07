@@ -1,4 +1,19 @@
 export const questions = [
+    {
+        title: "Why am I not getting emails?",
+        content: "asadsdasdasdsd",
+        answered: true
+    },
+    {
+        title: "Real Question #2",
+        content: "test test test",
+        answered: true
+    },
+    {
+        title: "Real Question #3",
+        content: "test test test",
+        answered: false
+    }
 
 ];
 
