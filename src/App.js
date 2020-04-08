@@ -12,6 +12,7 @@ import LoginComponent from "./LoginComponent";
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
 import NewArticleComponent from "./NewArticleComponent";
+import AnswerQuestionComponent from "./AnswerQuestionComponent";
 
 const routes = [
     {
@@ -52,7 +53,7 @@ const routes = [
     {
         path: "/questions/:id/answer",
         exact: true,
-        main: () => <div/>
+        main: () => <AnswerQuestionComponent/>
     },
 
     {
