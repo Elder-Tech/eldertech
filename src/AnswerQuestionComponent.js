@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderComponent from "./HeaderComponent";
 import {questions} from "./Constants";
+import TextEditorComponent from "./TextEditorComponent";
 
 export default class AnswerQuestionComponent extends React.Component {
     constructor(props) {
@@ -13,7 +14,15 @@ export default class AnswerQuestionComponent extends React.Component {
     render() {
         return <div className="App">
             <HeaderComponent/>
-            <h1>{JSON.stringify(this.state.question)}</h1>
+            <div className="question-answer-page">
+                <h1>{this.state.question.title}</h1>
+                <p>{this.state.question.content}</p>
+                <TextEditorComponent/>
+                <div>
+                    <button className="standard-button">Go Back</button>
+                    <button className="question-answer-page-button standard-button">Submit Answer</button>
+                </div>
+            </div>
         </div>
     }
 }

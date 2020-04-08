@@ -24,6 +24,9 @@ export default class TextEditorComponent extends Component {
             <RichTextEditor
                 value={this.state.value}
                 onChange={this.onChange}
+                editorClassName={"wysiwyg-input"}
+                className={"wysiwyg-input"}
+                autoFocus={true}
             />
         );
     }
