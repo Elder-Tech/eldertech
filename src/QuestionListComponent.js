@@ -3,7 +3,6 @@ import HeaderComponent from "./HeaderComponent";
 import { questions } from "./Constants";
 import { Link } from "react-router-dom";
 import question_image from './question.png';
-import BaseListComponent from "./BaseListComponent";
 
 export default class QuestionListComponent extends React.Component {
     constructor(props) {
@@ -27,9 +26,13 @@ export default class QuestionListComponent extends React.Component {
                 logged_in={this.state.logged_in} question={question} index={i}/>);
         }
 
-        return (
-            <BaseListComponent list={question_list_jsx} title="Questions" removeHeader={this.props.removeHeader}/>
-        )
+        return <div className="App">
+            <HeaderComponent/>
+            <div className="list-page">
+                <h2>Questions</h2>
+                {question_list_jsx}
+            </div>
+        </div>;
     }
 }
 

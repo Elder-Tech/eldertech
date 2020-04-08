@@ -11,7 +11,6 @@ import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
-import SearchComponent from "./SearchComponent";
 
 const routes = [
     {
@@ -54,15 +53,11 @@ const routes = [
         exact: true,
         main: () => <div/>
     },
+
     {
         path: "/login",
         exact: true,
         main: () => <LoginComponent />
-    },
-    {
-        path: "/search",
-        exact: true,
-        main: () => <SearchComponent />
     },
     {
         path: "/header",
@@ -102,7 +97,7 @@ function Homepage() {
             <div className="homepage-buttons">
                 <Link to="/questions">Questions</Link>
                 <Link to="/articles">Help Articles</Link>
-                <Link to="/search">Search</Link>
+                <button id="fixme">Search All</button>
             </div>
         </div>
     );

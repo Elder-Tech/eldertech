@@ -3,7 +3,6 @@ import HeaderComponent from "./HeaderComponent";
 import { articles } from "./Constants";
 import { Link } from "react-router-dom";
 import article_image from './article.png';
-import BaseListComponent from "./BaseListComponent";
 
 export default class ArticleListComponent extends React.Component {
     constructor(props) {
@@ -30,9 +29,14 @@ export default class ArticleListComponent extends React.Component {
             article_list_jsx.push(<ArticleButton index={i} key={i} article={article}/>);
         }
 
-        return (
-            <BaseListComponent list={article_list_jsx} title="Articles" extra={logged_in_jsx} />
-        )
+        return <div className="App">
+            <HeaderComponent/>
+            <div className="list-page">
+                {logged_in_jsx}
+                <h2>Articles</h2>
+                {article_list_jsx}
+            </div>
+        </div>;
     }
 }
 
