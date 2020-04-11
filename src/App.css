@@ -2,10 +2,15 @@
   margin: 0;
 }
 
-.App {
-  height: 100vh;
-  width: 100vw;
+body {
   background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
+
+}
+
+.App {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .App-header img {
@@ -78,6 +83,7 @@
   text-align: center;
   cursor: default;
 }
+
 
 .homepage img {
   display: block;
@@ -287,6 +293,7 @@
   padding-left: 10px;
   border-radius: 30px;
   border-color: #ffdba9;
+  width: 93%;
 }
 
 .submit-article-form {
@@ -295,4 +302,14 @@
   align-items: center;
   position: relative;
   top: 5%;
+}
+
+div.DraftEditor-root {
+  height: 50vh;
+  overflow-y: auto;
+}
+
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 100%;
 }
