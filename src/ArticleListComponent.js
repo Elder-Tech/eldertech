@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderComponent from "./HeaderComponent";
 import { articles } from "./Constants";
 import { Link } from "react-router-dom";
 import article_image from './article.png';
@@ -20,7 +19,7 @@ export default class ArticleListComponent extends React.Component {
 
     render() {
         let logged_in_jsx = <div/>;
-        if(this.state.logged_in) {
+        if(this.state.logged_in && !this.props.noAdd) {
             logged_in_jsx = <Link id="add-article-btn" to="/articles/new">Add New Article</Link>;
         }
 

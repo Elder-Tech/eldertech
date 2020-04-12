@@ -6,6 +6,7 @@
   height: 100vh;
   width: 100%;
   background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
+  overflow-x: hidden;
 }
 
 .App-header img {
@@ -271,4 +272,8 @@
 
 .search-view {
   display: flex;
+}
+
+.search-view .list-page {
+  flex-basis: auto;
 }

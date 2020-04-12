@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import HeaderComponent from "./HeaderComponent";
 
 class BaseListComponent extends Component {
     constructor(props) {
@@ -7,13 +6,8 @@ class BaseListComponent extends Component {
     }
 
     render() {
-        let header = <div/>;
-        if (!this.props.removeHeader) {
-            header = <HeaderComponent />
-        }
         return (
-            <div className="App">
-                {header}
+            <div>
                 <div className="list-page">
                     {this.props.extra}
                     <h2>{this.props.title}</h2>

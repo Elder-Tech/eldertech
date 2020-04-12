@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderComponent from "./HeaderComponent";
 import { questions } from "./Constants";
 import { Link } from "react-router-dom";
 import question_image from './question.png';
@@ -28,7 +27,7 @@ export default class QuestionListComponent extends React.Component {
         }
 
         return (
-            <BaseListComponent list={question_list_jsx} title="Questions" removeHeader={this.props.removeHeader}/>
+            <BaseListComponent list={question_list_jsx} title="Questions"/>
         )
     }
 }

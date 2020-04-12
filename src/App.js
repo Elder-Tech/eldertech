@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 import HeaderComponent from "./HeaderComponent";
 import LoginComponent from "./LoginComponent";
-import ArticleListComponent from "./ArticleListComponent";
-import QuestionListComponent from "./QuestionListComponent";
+import ArticleListPageComponent from "./ArticleListPageComponent";
+import QuestionListPageComponent from "./QuestionListPageComponent";
 import SearchComponent from "./SearchComponent";
 
 const routes = [
@@ -22,7 +22,7 @@ const routes = [
     {
         path: "/articles",
         exact: true,
-        main: () => <ArticleListComponent />
+        main: () => <ArticleListPageComponent />
     },
     {
         path: "/articles/new",
@@ -37,7 +37,7 @@ const routes = [
     {
         path: "/questions",
         exact: true,
-        main: () => <QuestionListComponent />
+        main: () => <QuestionListPageComponent />
     },
     {
         path: "/questions/new",

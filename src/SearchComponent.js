@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
+import HeaderComponent from "./HeaderComponent";
 
 class SearchComponent extends Component {
     constructor(props) {
@@ -10,10 +11,11 @@ class SearchComponent extends Component {
     render() {
         return (
             <div className="App">
-            <div className="search-view">
-                <ArticleListComponent />
-                <QuestionListComponent removeHeader={true} />
-            </div>
+                <HeaderComponent />
+                <div className="search-view">
+                    <ArticleListComponent noAdd={true}/>
+                    <QuestionListComponent />
+                </div>
             </div>
         );
     }
