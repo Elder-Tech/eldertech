@@ -1,8 +1,9 @@
 import React from 'react';
-import { questions } from "./Constants";
+import {questions} from "./Constants";
 import { Link } from "react-router-dom";
 import question_image from './question.png';
 import BaseListComponent from "./BaseListComponent";
+var fuzzaldrinPlus = require("fuzzaldrin-plus");
 
 export default class QuestionListComponent extends React.Component {
     constructor(props) {
@@ -19,15 +20,38 @@ export default class QuestionListComponent extends React.Component {
 
     render() {
         let question_list_jsx = [];
-        for(let i = 0 ; i < questions.length ; i++) {
-            let question = questions[i];
+        let term = localStorage.getItem("search_term");
 
-            question_list_jsx.push(<QuestionListContainer key={i+"qlc"}
-                logged_in={this.state.logged_in} question={question} index={i}/>);
+        if(term === "" || term === null){
+            for(let i = 0 ; i < questions.length ; i++) {
+                let question = questions[i];
+                question_list_jsx.push(<QuestionListContainer key={i+"qlc"}
+                    logged_in={this.state.logged_in} question={question} index={i}/>);
+            }
+        }else
+        {
+            let question_title_strings = [];
+            let question_content_strings = [];
+            for(let i = 0 ; i < questions.length ; i++) {
+                question_title_strings[i] = questions[i].title;
+                question_content_strings[i] = questions[i].content;
+            }
+            let titleResults = fuzzaldrinPlus.filter(question_title_strings, term);
+            let contentResults = fuzzaldrinPlus.filter(question_content_strings, term);
+
+            for (let i = 0; i < questions.length; i++) {
+                let question = questions[i];
+                if(titleResults.includes(question.title) || contentResults.includes(question.content)){
+                    question_list_jsx.push(<QuestionListContainer key={i+"qlc"} logged_in={this.state.logged_in} question={question} index={i}/>);
+                }
+            }
         }
-
+        let questionListTitle = "Questions";
+        if(question_list_jsx.length === 0){
+            questionListTitle = "No questions related to your search"
+        }
         return (
-            <BaseListComponent list={question_list_jsx} title="Questions"/>
+            <BaseListComponent list={question_list_jsx} title={questionListTitle}/>
         )
     }
 }

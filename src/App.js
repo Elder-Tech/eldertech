@@ -12,6 +12,8 @@ import LoginComponent from "./LoginComponent";
 import ArticleListPageComponent from "./ArticleListPageComponent";
 import QuestionListPageComponent from "./QuestionListPageComponent";
 import SearchComponent from "./SearchComponent";
+import SearchPageComponent from "./SearchPageComponent";
+
 
 const routes = [
     {
@@ -60,6 +62,11 @@ const routes = [
         main: () => <LoginComponent />
     },
     {
+        path: "/search-page",
+        exact: true,
+        main: () => <SearchPageComponent/>
+    },
+    {
         path: "/search",
         exact: true,
         main: () => <SearchComponent />
@@ -94,7 +101,7 @@ function Homepage() {
     if(logged_in) {
         sign_in_button_text = "Logged In";
     }
-
+    localStorage.setItem("search_term",null);
     return (
         <div className="App homepage">
             <Link to="/login" className="homepage-sign-in-btn">{sign_in_button_text}</Link>
@@ -102,7 +109,7 @@ function Homepage() {
             <div className="homepage-buttons">
                 <Link to="/questions">Questions</Link>
                 <Link to="/articles">Help Articles</Link>
-                <Link to="/search">Search</Link>
+                <Link to="/search-page">Search</Link>
             </div>
         </div>
     );

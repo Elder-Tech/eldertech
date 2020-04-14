@@ -14,8 +14,8 @@ export default class ArticleListPageComponent extends React.Component {
             this.setState({logged_in: true});
         }
     }
-
     render() {
+        localStorage.removeItem("search_term");
         return (
             <div className="App">
                 <HeaderComponent />

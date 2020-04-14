@@ -16,6 +16,7 @@ export default class QuestionListPageComponent extends React.Component {
     }
 
     render() {
+        localStorage.setItem("search_term","");
         return (
             <div className="App">
                 <HeaderComponent />

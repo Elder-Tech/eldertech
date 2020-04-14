@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
-import HeaderComponent from "./HeaderComponent";
+import SearchResultsHeaderComponent from "./SearchResultsHeaderComponent";
 
 class SearchComponent extends Component {
     constructor(props) {
@@ -9,10 +9,13 @@ class SearchComponent extends Component {
     }
 
     render() {
+
+        let term = localStorage.getItem("search_term");
+
         return (
             <div className="App">
-                <HeaderComponent />
-                <div className="search-term">{this.props.term}</div>
+                <SearchResultsHeaderComponent />
+                <div className="search-term">Search results for: "{term}"</div>
                 <div className="search-view">
                     <ArticleListComponent noAdd={true}/>
                     <QuestionListComponent />
@@ -21,5 +24,6 @@ class SearchComponent extends Component {
         );
     }
 }
+
 
 export default SearchComponent;
