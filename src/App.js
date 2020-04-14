@@ -13,7 +13,9 @@ import ArticleListPageComponent from "./ArticleListPageComponent";
 import QuestionListPageComponent from "./QuestionListPageComponent";
 import SearchComponent from "./SearchComponent";
 import SearchPageComponent from "./SearchPageComponent";
-
+import ArticleListComponent from "./ArticleListComponent";
+import QuestionListComponent from "./QuestionListComponent";
+import NewArticleComponent from "./NewArticleComponent";
 
 const routes = [
     {
@@ -29,7 +31,7 @@ const routes = [
     {
         path: "/articles/new",
         exact: true,
-        main: () => <div/>
+        main: () => <NewArticleComponent />
     },
     {
         path: "/articles/:id",
@@ -56,6 +58,7 @@ const routes = [
         exact: true,
         main: () => <div/>
     },
+
     {
         path: "/login",
         exact: true,

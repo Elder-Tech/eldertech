@@ -2,10 +2,17 @@
   margin: 0;
 }
 
+body {
+  background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
+
+}
+
 .App {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(0deg, #83bbe5, #7599e9 40%, #83bbe5);
   overflow-x: hidden;
 }
 
@@ -339,3 +346,41 @@
   cursor: pointer;
 }
 
+.standard-button {
+  background: #ffdba9;
+  border: 3px solid #ef8d22;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.standard-input {
+  flex-grow: 1;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border-color: #ffdba9;
+  width: 93%;
+}
+
+.submit-article-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 5%;
+}
+
+div.DraftEditor-root {
+  height: 50vh;
+  overflow-y: auto;
+}
+
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 100%;
+}
