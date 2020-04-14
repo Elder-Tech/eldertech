@@ -2,7 +2,7 @@ import React from 'react';
 import {Link, Redirect} from "react-router-dom";
 import logo from "./logo.png";
 
-export default class ArticleListComponent extends React.Component {
+export default class SearchPageComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
