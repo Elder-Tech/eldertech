@@ -12,6 +12,7 @@ class SearchComponent extends Component {
         return (
             <div className="App">
                 <HeaderComponent />
+                <div className="search-term">{this.props.term}</div>
                 <div className="search-view">
                     <ArticleListComponent noAdd={true}/>
                     <QuestionListComponent />
