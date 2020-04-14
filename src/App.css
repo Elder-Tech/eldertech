@@ -384,3 +384,31 @@ div.DraftEditor-editorContainer,
 div.public-DraftEditor-content {
   height: 100%;
 }
+
+.view-aq-form{
+  position: relative;
+  background-color: #87CEFA;
+  padding-top: 30px;
+  horiz-align: center;
+  vertical-align: center;
+  padding-bottom:300px;
+  margin-left: 30%;
+  margin-right: 30%;
+  min-width: 300px;
+
+}
+
+.view-aq_title{
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.view-aq_contents{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 30px;
+}

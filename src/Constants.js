@@ -2,17 +2,20 @@ export const questions = [
     {
         title: "Why am I not getting emails?",
         content: "test test test",
-        answered: true
+        answered: true,
+        answer: ""
     },
     {
         title: "Why are my emails not sending?",
         content: "test test test",
-        answered: true
+        answered: true,
+        answer: ""
     },
     {
         title: "How do I turn my computer on?",
         content: "test test test",
-        answered: false
+        answered: false,
+        answer: ""
     }
 
 ];

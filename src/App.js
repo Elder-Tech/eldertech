@@ -16,6 +16,8 @@ import SearchPageComponent from "./SearchPageComponent";
 import ArticleListComponent from "./ArticleListComponent";
 import QuestionListComponent from "./QuestionListComponent";
 import NewArticleComponent from "./NewArticleComponent";
+import ViewArticleComponent from "./ViewArticleComponent";
+import ViewQuestionComponent from "./ViewQuestionComponent";
 
 const routes = [
     {
@@ -36,7 +38,7 @@ const routes = [
     {
         path: "/articles/:id",
         exact: true,
-        main: () => <div/>
+        main: () => <ViewArticleComponent />
     },
     {
         path: "/questions",
@@ -51,7 +53,7 @@ const routes = [
     {
         path: "/questions/:id",
         exact: true,
-        main: () => <div/>
+        main: () => <ViewQuestionComponent/>
     },
     {
         path: "/questions/:id/answer",
