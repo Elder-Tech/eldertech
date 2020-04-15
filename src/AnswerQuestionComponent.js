@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderComponent from "./HeaderComponent";
 import {questions} from "./Constants";
 import TextEditorComponent from "./TextEditorComponent";
+import { Link } from "react-router-dom";
 
 export default class AnswerQuestionComponent extends React.Component {
     constructor(props) {
@@ -19,8 +20,8 @@ export default class AnswerQuestionComponent extends React.Component {
                 <p>{this.state.question.content}</p>
                 <TextEditorComponent/>
                 <div>
-                    <button className="standard-button">Go Back</button>
-                    <button className="question-answer-page-button standard-button">Submit Answer</button>
+                    <Link to="/questions" className="standard-button">Go Back</Link>
+                    <Link to="/questions" className="standard-button question-answer-page-button">Submit Answer</Link>
                 </div>
             </div>
         </div>
