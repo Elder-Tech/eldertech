@@ -18,6 +18,7 @@ import QuestionListComponent from "./QuestionListComponent";
 import NewArticleComponent from "./NewArticleComponent";
 import ViewArticleComponent from "./ViewArticleComponent";
 import ViewQuestionComponent from "./ViewQuestionComponent";
+import AnswerQuestionComponent from "./AnswerQuestionComponent";
 
 const routes = [
     {
@@ -58,7 +59,7 @@ const routes = [
     {
         path: "/questions/:id/answer",
         exact: true,
-        main: () => <div/>
+        main: () => <AnswerQuestionComponent/>
     },
 
     {
