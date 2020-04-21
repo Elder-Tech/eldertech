@@ -21,6 +21,7 @@ export default class QuestionListComponent extends React.Component {
     render() {
         let question_list_jsx = [];
         let term = localStorage.getItem("search_term");
+        let logged_in_jsx = <Link id="add-article-btn" to="/questions/new">Ask Question</Link>;
 
         if(term === "" || term === null){
             for(let i = 0 ; i < questions.length ; i++) {
@@ -51,7 +52,7 @@ export default class QuestionListComponent extends React.Component {
             questionListTitle = "No questions related to your search"
         }
         return (
-            <BaseListComponent list={question_list_jsx} title={questionListTitle}/>
+            <BaseListComponent list={question_list_jsx} title={questionListTitle} extra={logged_in_jsx}/>
         )
     }
 }

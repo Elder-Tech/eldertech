@@ -19,6 +19,7 @@ import NewArticleComponent from "./NewArticleComponent";
 import ViewArticleComponent from "./ViewArticleComponent";
 import ViewQuestionComponent from "./ViewQuestionComponent";
 import AnswerQuestionComponent from "./AnswerQuestionComponent";
+import AskQuestionComponent from "./AskQuestionComponent";
 
 const routes = [
     {
@@ -49,7 +50,7 @@ const routes = [
     {
         path: "/questions/new",
         exact: true,
-        main: () => <div/>
+        main: () => <AskQuestionComponent />
     },
     {
         path: "/questions/:id",

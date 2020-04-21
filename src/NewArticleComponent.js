@@ -8,7 +8,7 @@ class NewArticleComponent extends Component {
             <div className="App">
                 <HeaderComponent/>
                 <div className="submit-article-form">
-                <form>
+                <form onSubmit={()=>{alert("article submitted!")}}>
                     <input className="standard-input" name="title" type="text" placeholder="Enter title here" />
                     <TextEditorComponent/>
                     <br/>

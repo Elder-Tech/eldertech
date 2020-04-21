@@ -369,7 +369,7 @@ body {
 .standard-input {
   flex-grow: 1;
   margin: 10px;
-  padding-left: 10px;
+  padding: 10px;
   border-radius: 30px;
   border-color: #ffdba9;
   width: 93%;
